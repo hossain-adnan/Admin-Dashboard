@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.sidebar {
+    background-color: green;
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+}
+
+.header {
+    grid-column: 2 / 4;
+    background-color: blueviolet;
+}
+
+.main_container {
+    grid-column: 2 / 4;
+    grid-row: 2 / 5;
+    background-color: gray;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-rows: 80px 1fr 2fr;
+}
+
+.sidebar .title {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    gap: 15px;
+
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.sidebar .title .logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;   
+}
+
+.sidebar .title .logo div {
+    background-color: white;
+}
